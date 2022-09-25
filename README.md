@@ -15,7 +15,9 @@
   
   <p align="center">
     RSR is a school project, in which we managed to build up communities and make them share ressources.
-    
+    <br />
+    <a href="https://github.com/floriaaan/rsr-web"><strong>Explore the docs »</strong></a>
+    <br />
     <br />
     <a href="https://github.com/floriaaan/rsr-web">View Demo</a>
     ·
