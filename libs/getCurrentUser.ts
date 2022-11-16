@@ -67,6 +67,7 @@ export const canItBeSuspend = async (
 ) => {
   const user = await getUser(req);
   const suspenderRole = user?.role;
+  // @ts-ignore
   const { role } = await User.findOne({ _id: suspendedUserId }).select("-password").lean();
   if (suspenderRole === "superadmin" && suspenderRole !== role) {
     return true;
