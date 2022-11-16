@@ -40,6 +40,7 @@ export const getUser = async (req: NextApiRequest) => {
   const uid = await getUidFromJWT(req);
   if (!uid) return null;
 
+  // @ts-ignore
   const data = await User.findOne({ _id: uid }).select("-password").lean();
   return { ...data, uid: data._id.toString() };
 };
